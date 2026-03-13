@@ -17,6 +17,12 @@ const favoriteSchema = new mongoose.Schema(
       type: String,
       default: "",
     },
+
+    // NEW: Favorite status within user's collection
+    isFavorite: {
+      type: Boolean,
+      default: false
+    }
   },
   { timestamps: true }
 );
